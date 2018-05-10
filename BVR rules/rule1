@@ -1,0 +1,134 @@
+﻿<BaseVISor
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#" 
+  xmlns:stol="http://www.vistology.com/ont/2013/STO-L.owl#"
+  xmlns:stix="http://stix.mitre.org/STIX#">
+
+<!-- include the OWL 2 RL Axioms -->
+<include name="owl2rl"/>
+
+<!-- include the STO-L ontology -->
+<include lang="owl2" path="/home/shanlu/Documents/ont/STIX.owl" />
+
+<!-- define a couple rules to print the results of the OWL 2 RL inferencing-->
+
+<rule name="CGIOverflowSituation axiom">
+    <body>
+    </body>
+    <head>
+    <triple>
+        <subject variable="s"/>
+        <predicate resource="rdf:type"/>
+        <object resource="http://stix.mitre.org/STIX#CGIOverflowSituation"/>
+    </triple>
+    <triple>
+        <subject variable="s"/>
+        <predicate resource="http://www.vistology.com/ont/2013/STO-L.owl#supports"/>
+        <object variable="infon1"/>
+    </triple>
+    <triple>
+        <subject variable="s"/>
+        <predicate resource="http://www.vistology.com/ont/2013/STO-L.owl#supports"/>
+        <object variable="infon2"/>
+    </triple>
+    <triple>
+        <subject variable="infon1"/>
+        <predicate resource="http://www.vistology.com/ont/2013/STO-L.owl#relation"/>
+        <object resource="http://stix.mitre.org/STIX#isConsequenceOf"/>
+    </triple>
+    <triple>
+        <subject variable="infon1"/>
+        <predicate resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor1"/>
+        <object variable="indicator1"/>
+    </triple>
+    <triple>
+        <subject variable="infon1"/>
+        <predicate resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor2"/>
+        <object variable="indicator2"/>
+    </triple>
+    <triple>
+        <subject variable="infon2"/>
+        <predicate resource="http://www.vistology.com/ont/2013/STO-L.owl#relation"/>
+        <object resource="http://stix.mitre.org/STIX#isConsequenceOf"/>
+    </triple>
+    <triple>
+        <subject variable="infon2"/>
+        <predicate resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor1"/>
+        <object variable="indicator2"/>
+    </triple>
+    <triple>
+        <subject variable="infon2"/>
+        <predicate resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor2"/>
+        <object variable="indicator3"/>
+    </triple>
+    <triple>
+        <subject variable="indicator1"/>
+        <predicate resource="rdf:type"/>
+        <object resource="http://stix.mitre.org/STIX#QueryDatabaseIndicator"/>
+    </triple>
+    <triple>
+        <subject variable="indicator2"/>
+        <predicate resource="rdf:type"/>
+        <object resource="http://stix.mitre.org/STIX#SendOverflowStringIndicator"/>
+    </triple>
+    <triple>
+        <subject variable="indicator3"/>
+        <predicate resource="rdf:type"/>
+        <object resource="http://stix.mitre.org/STIX#ScanTargetServerIndicator"/>
+    </triple>
+
+    <triple>
+        <subject variable="indicator1"/>
+        <predicate resource="http://stix.mitre.org/STIX#observable"/>
+        <object variable="observable1"/>
+    </triple>
+    <triple>
+        <subject variable="indicator2"/>
+        <predicate resource="http://stix.mitre.org/STIX#observable"/>
+        <object variable="observable2"/>
+    </triple>
+    <triple>
+        <subject variable="indicator3"/>
+        <predicate resource="http://stix.mitre.org/STIX#observable"/>
+        <object variable="observable3"/>
+    </triple>
+    <triple>
+        <subject variable="observable1"/>
+        <predicate resource="http://stix.mitre.org/STIX#event"/>
+        <object variable="event1"/>
+    </triple>
+    <triple>
+        <subject variable="observable2"/>
+        <predicate resource="http://stix.mitre.org/STIX#event"/>
+        <object variable="event2"/>
+    </triple>
+    <triple>
+        <subject variable="observable3"/>
+        <predicate resource="http://stix.mitre.org/STIX#event"/>
+        <object variable="event3"/>
+    </triple>
+    <triple>
+        <subject variable="event1"/>
+        <predicate resource="http://stix.mitre.org/STIX#hasSourceIP"/>
+        <object variable="ip1"/>
+    </triple>
+    <triple>
+        <subject variable="event2"/>
+        <predicate resource="http://stix.mitre.org/STIX#hasDestinationIP"/>
+        <object variable="ip1"/>
+    </triple>
+    <triple>
+        <subject variable="event2"/>
+        <predicate resource="http://stix.mitre.org/STIX#hasSourceIP"/>
+        <object variable="ip2"/>
+    </triple>
+    <triple>
+        <subject variable="event3"/>
+        <predicate resource="http://stix.mitre.org/STIX#hasDestinationIP"/>
+        <object variable="ip2"/>
+    </triple>
+    </head>
+</rule>
+</BaseVISor>
