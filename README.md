@@ -1,8 +1,7 @@
 # Evaluation of a Relevance Reasoning Method on MACCDC 2012 Dataset
 
-This repository is a evaluation of relevance reasoning method on MACCDC 2012 dataset
+This repository is an evaluation of relevance reasoning method on MACCDC 2012 dataset. The relevance reasoning method paper has been submitted to ISWC 2018 conference.
 
-#Dataset
 
 The U.S. National CyberWatch Mid-Atlantic Collegiate Cyber Defence Competition (MACCDC) provides college students with real life cyber defence experience. MACCDC official website: http://maccdc.org/
 
