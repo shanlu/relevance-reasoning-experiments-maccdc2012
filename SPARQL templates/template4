@@ -8,12 +8,12 @@ PREFIX domain: <http://example/0.1>
 
 SELECT ?relation
 WHERE
-  { ________        rdf:type stix:Relation;
-                    stix:arg1 ?object1;
-                    stix:arg2 ?object2.
-    ________        rdf:type stix:Relation;
-                    stix:arg1 ?object1;
-                    stix:arg2 ?object2.
-    ?object1        rdf:type  ________
-    ?object2        rdf:type  ________
+  { ________    rdf:type   stix:Relation;
+                stix:arg1  ?object1;
+                stix:arg2  ?object2.
+    ________    rdf:type   stix:Relation;
+                stix:arg1  ?object1;
+                stix:arg2  ?object2.
+    ?object1    rdf:type   ________
+    ?object2    rdf:type   ________
   }
