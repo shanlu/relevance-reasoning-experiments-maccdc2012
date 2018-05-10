@@ -1,0 +1,1728 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ADD-v07 "http://www.vistology.com/ont/ADD/ADD-v07.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.vistology.com/ont/2013/STO-L.owl#"
+     xml:base="http://www.vistology.com/ont/2013/STO-L.owl"
+     xmlns:ADD-v07="http://www.vistology.com/ont/ADD/ADD-v07.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="http://www.vistology.com/ont/2013/STO-L.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#affectObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#affectObject">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor1">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor1Inverse"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor1Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor1Inverse"/>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor2">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor2Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor2Inverse">
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor2"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor3">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor3Inverse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor3Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor3Inverse"/>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor4 -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor4">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor4Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor4Inverse">
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor4"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor5 -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor5">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor5Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor5Inverse">
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor5"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor6 -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor6">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor6Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor6Inverse">
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor6"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor7 -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor7">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor7Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor7Inverse">
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor7"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor8 -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor8">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#anchor8Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#anchor8Inverse">
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#anchor8"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#asks -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#asks">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Question"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#asserts -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#asserts">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Proposition"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#characterizes -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#characterizes">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Proposition"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#characterizesSituationByInfon -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#characterizesSituationByInfon">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Proposition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#characterizingQuery -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#characterizingQuery">
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#characterizesSituationByInfon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#contains">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#GeoRegion"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#locatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#covers -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#covers">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapObject"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapRectangle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#dimensionality -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#executesProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#executesProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#hasParticipant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#focalSituation -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#focalSituation">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasAction">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Action"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasAttribute">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasAttributeValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasAttributeValue">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasBeginning -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasBeginning">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeInstant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasCapability">
+        <rdfs:comment>Whether an Indivudual has the capability of performing an Action (more generally a Process); either known (asserted), or needs to be proven.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasEnd -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasEnd">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeInstant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasObject">
+        <rdfs:comment>&quot;Has&quot; is used here in the sense of &quot;possess&quot;, &quot;own&quot;, &quot;hold for use&quot;, but not as &quot;part-of&quot;. The domain is Agent, the range is any Individual. Other versions of &quot;has&quot; appear in this ontology, although not specified as sub-properties of &quot;has&quot;, e.g., hasAttribute, hasParticipant.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#DiscreteObject"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasParticipant">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#isParticipantIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasSubProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasSubProcess">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#impliedByRule -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#impliedByRule">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Rule"/>
+        <rdfs:domain rdf:resource="&ADD-v07;PropertyRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#includes"/>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#informationSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#informationSource">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#InformationObject"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#InformationObject"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#inside -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#inside">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapObject"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapRectangle"/>
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#covers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#involves">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#isParticipantIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#isParticipantIn">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#isProcessSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#isProcessSubject">
+        <rdfs:subPropertyOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#hasParticipant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#lastsFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#lastsFor">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeInterval"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#locatedIn">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#GeoRegion"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#map -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#map">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#ne -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#ne">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapPoint"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapRectangle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#par1Type -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#par1Type">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#par2Type -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#par2Type">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#par3Type -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#par3Type">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#par4Type -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#par4Type">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#par5Type -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#par5Type">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#par6Type -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#par6Type">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#par7Type -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#par7Type">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#par8Type -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#par8Type">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#partOf">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#includes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#polarity -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#polarity">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Polarity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#referringSituation -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#referringSituation">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#resourceSituation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#relation -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#relation">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#relevantIndividual -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#relevantIndividual">
+        <rdfs:comment>Relevant individuals are those objects that are relevant to a specific Situation. They can be instances of Individual, Process, Situation. They are anchored to the infon that is associated with a specific situation. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#relevantRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#relevantRelation">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+        <rdfs:range rdf:resource="&ADD-v07;PropertyRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#representedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#representedBy">
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#represents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#represents -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#represents">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#InformationContent"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#InformationRepresentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#resourceSituation -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#resourceSituation">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#supports -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#supports">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Infon"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#sw -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#sw">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapPoint"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapRectangle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#useProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#useProcess">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Agent"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#utterance -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#utterance">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Utterance"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#UtteranceSituation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#utteranceSituation -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#utteranceSituation">
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+        <owl:inverseOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#focalSituation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#utters -->
+
+    <owl:ObjectProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#utters">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Source"/>
+        <rdfs:range rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Utterance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#attributeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#attributeValue">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Value"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#certainty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#certainty">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Value"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasDataValue">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hasSentenceDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hasSentenceDataValue">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Sentence"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#hasDataValue"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#inDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#inDateTime">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeInstant"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#lat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#lat">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapPoint"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#lon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#lon">
+        <rdfs:domain rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapPoint"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Acceleration -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Acceleration">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:allValuesFrom rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#AccelerationUnits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#AccelerationUnits -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#AccelerationUnits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#meter_second2"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Action -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Action">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Activity -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+        <rdfs:comment>NIEM: ActivityType: A data type for a single or set of related actions, events, or process steps. In OWL Full this would be a class whose instances are other classes (types of Activity). In DL, need to have a convention of subclassing Activity and then instantiate the subclasses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Agent -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Agent">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#DiscreteObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Area -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Area">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:allValuesFrom rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#AreaUnits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#AreaUnits -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#AreaUnits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#feet2"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#meter2"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Attribute -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Attribute">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Country -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Country">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#DiscreteObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#DiscreteObject -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#DiscreteObject">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Distance -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Distance">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:allValuesFrom rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#DistanceUnits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#DistanceUnits -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#DistanceUnits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#inch"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#mile"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#foot"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#meter"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Energy -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:allValuesFrom rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#EnergyUnits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#EnergyUnits -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#EnergyUnits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#joule"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#FocalSituation -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#FocalSituation">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Force -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Force">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:allValuesFrom rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#ForceUnits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#ForceUnits -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#ForceUnits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#newton"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#GeoFeature -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#GeoFeature">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#GeoRegion -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#GeoRegion">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#GeoFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Individual -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Individual">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Infon -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Infon">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#InformationContent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#InformationContent -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#InformationContent">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#InformationObject"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Object that carries information, idependently of its representation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#InformationObject -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#InformationObject">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#InformationRepresentation -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#InformationRepresentation">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#InformationObject"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Representation of information content in some language, e.g., English.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#LiveObject -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#LiveObject">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#DiscreteObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#MapObject -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#MapObject">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#InformationRepresentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#MapPoint -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#MapPoint">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#MapRectangle -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#MapRectangle">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MapObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Mass -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Mass">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:allValuesFrom rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MassUnits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#MassUnits -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#MassUnits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#gram"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#kilogram"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#pound"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Matter -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Matter">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Water, gold, air, and so on. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Object -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Phrase -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Phrase">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#InformationRepresentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Polarity -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Polarity">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Value"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Power -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Power">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:allValuesFrom rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#PowerUnits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#PowerUnits -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#PowerUnits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#watt"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Process -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Process">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Proposition -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Proposition">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#InformationContent"/>
+        <rdfs:comment rdf:datatype="&xsd;string">As in Barwise: a proposition is a pair (s, I), where s is situation, I is infon and the relation is &quot;supports&quot;, written as |=.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Query -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Query">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Question -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Question">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Phrase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Relation -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Relation">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#ResourceSituation -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#ResourceSituation">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Rule -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Rule">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+        <rdfs:comment>Some rules are &quot;situational&quot;, i.e., related to a situation. Some others are &quot;support rules&quot;, i.e., rules that are invoked by situational rules or simply just to prove that a property holds (when OWL is not able to prove a property).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Sentence -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Sentence">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Phrase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Situation -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Situation">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Source -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Source">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Individual"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#InformationObject"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Process"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Time -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Time">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#TimeInstant -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#TimeInstant">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#TimeInterval -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#TimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Time"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:allValuesFrom rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeUnits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#TimeUnits -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#TimeUnits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#week"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#second"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#month"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#year"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#mimute"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hour"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#day"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Utterance -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Utterance">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Phrase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#UtteranceSituation -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#UtteranceSituation">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Value -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Value">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Velocity -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Velocity">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:allValuesFrom rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#VelocityUnits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#VelocityUnits -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#VelocityUnits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#meter_second"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#mile_hour"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#Volume -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Volume">
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Attribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:allValuesFrom rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#VolumeUnits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#dimensionality"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#VolumeUnits -->
+
+    <owl:Class rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#VolumeUnits">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#gallon"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#liter"/>
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#meter3"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Dimensionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.vistology.com/ont/ADD/ADD-v07.owl#PropertyRelation -->
+
+    <owl:Class rdf:about="&ADD-v07;PropertyRelation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#Relation"/>
+                    <rdf:Description rdf:about="&owl;ObjectProperty"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#ObjectProperty -->
+
+    <owl:Class rdf:about="&owl;ObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#_0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#_0">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Polarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#_1">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#Polarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#day -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#day">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#feet2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#feet2">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#AreaUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#foot -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#foot">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#DistanceUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#gallon -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#gallon">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#VolumeUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#gram -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#gram">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MassUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#hour -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#hour">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#inch -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#inch">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#DistanceUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#joule -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#joule">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#EnergyUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#kilogram -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#kilogram">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MassUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#liter -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#liter">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#VolumeUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#meter -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#meter">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#DistanceUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#meter2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#meter2">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#AreaUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#meter3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#meter3">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#VolumeUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#meter_second -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#meter_second">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#VelocityUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#meter_second2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#meter_second2">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#AccelerationUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#mile -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#mile">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#DistanceUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#mile_hour -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#mile_hour">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#VelocityUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#mimute -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#mimute">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#month -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#month">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#newton -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#newton">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#ForceUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#pound -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#pound">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#MassUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#second -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#second">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#watt -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#watt">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#PowerUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#week -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#week">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeUnits"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vistology.com/ont/2013/STO-L.owl#year -->
+
+    <owl:NamedIndividual rdf:about="http://www.vistology.com/ont/2013/STO-L.owl#year">
+        <rdf:type rdf:resource="http://www.vistology.com/ont/2013/STO-L.owl#TimeUnits"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

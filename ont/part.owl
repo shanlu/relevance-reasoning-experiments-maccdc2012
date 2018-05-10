@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.w3.org/2001/sw/BestPractices/OEP/SimplePartWhole/part.owl#"
+  xml:base="http://www.w3.org/2001/sw/BestPractices/OEP/SimplePartWhole/part.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1.0</owl:versionInfo>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An ontology containing the basic part relations: partOf, hasPart, partOf_directly, and hasPart_directly.  
+    These are described in the accompanying note.
+    Author: Chris Welty</rdfs:comment>
+  </owl:Ontology>
+  <owl:TransitiveProperty rdf:ID="partOf">
+    <owl:inverseOf>
+      <owl:TransitiveProperty rdf:ID="hasPart"/>
+    </owl:inverseOf>
+  </owl:TransitiveProperty>
+  <owl:ObjectProperty rdf:ID="hasPart_directly">
+    <rdfs:subPropertyOf rdf:resource="#hasPart"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="partOf_directly">
+        <rdfs:subPropertyOf rdf:resource="#partOf"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 2.1, Build 284)  http://protege.stanford.edu -->
