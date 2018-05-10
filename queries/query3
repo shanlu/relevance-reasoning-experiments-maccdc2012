@@ -7,7 +7,7 @@ PREFIX stol: <http://www.vistology.com/ont/2013/STO-L.owl#>
 
 SELECT ?indicator1 ?indicator2
 	WHERE { 
-    ?indicator1 	rdf:type 	stix:DataExfilIndicator.
-		?indicator2 	rdf:type 	stix:ScanIndicator.
-		?indicator1	stix:isConsequenceOf	?indicator2.
+    		?indicator1 	rdf:type 	stix:DataExfilIndicator
+		?indicator2 	rdf:type 	stix:ScanIndicator
+		?indicator1	stix:isConsequenceOf	?indicator2
 		}
