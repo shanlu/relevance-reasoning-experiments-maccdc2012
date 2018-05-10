@@ -19,12 +19,12 @@
     <triple>
         <subject variable="indicator1"/>
         <predicate resource="rdf:type"/>
-        <object resource="http://stix.mitre.org/STIX#SendOverflowStringIndicator"/>
+        <object resource="http://stix.mitre.org/STIX#DataExfilIndicator"/>
     </triple>
     <triple>
         <subject variable="indicator2"/>
         <predicate resource="rdf:type"/>
-        <object resource="http://stix.mitre.org/STIX#ScanTargetServerIndicator"/>
+        <object resource="http://stix.mitre.org/STIX#BadCodeIndicator"/>
     </triple>
     <triple>
         <subject variable="indicator1"/>
