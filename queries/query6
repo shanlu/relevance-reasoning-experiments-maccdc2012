@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX stix: <http://stix.mitre.org/STIX#>
+PREFIX stol: <http://www.vistology.com/ont/2013/STO-L.owl#>
+
+SELECT ?indicator1 ?indicator2
+	WHERE { 
+    		?indicator1 	rdf:type 	stix:AuthenticationIndicator
+		?indicator2 	rdf:type 	stix:PingIndicator
+		?indicator1	stix:isConsequenceOf	?indicator2
+		}
