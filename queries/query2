@@ -7,8 +7,8 @@ PREFIX stol: <http://www.vistology.com/ont/2013/STO-L.owl#>
 
 SELECT ?indicator
 	WHERE {
-    stix:observable rdf:type stol:Relation
-    ?indicator 	rdf:type 	stix:Indicator
+    		stix:observable rdf:type 	stol:Relation
+    		?indicator 	rdf:type 	stix:Indicator
 		?observable	rdf:type	stix:DataExfilObservable
 		?indicator	stix:observable ?observable	
 		}
