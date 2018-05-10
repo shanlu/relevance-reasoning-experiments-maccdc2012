@@ -1,1 +1,2 @@
-# relevance-reasoning-experiments-maccdc2012
+# Evaluation of a Relevance Reasoning Method using MACCDC 2012 Dataset
+
