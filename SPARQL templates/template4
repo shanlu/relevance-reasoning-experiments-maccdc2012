@@ -1,0 +1,19 @@
+ (14 sloc)  522 Bytes
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX stol: <http://www.vistology.com/ont/2013/STO-L.owl#>
+PREFIX domain: <http://example/0.1>
+
+SELECT ?relation
+WHERE
+  { ________        rdf:type stix:Relation;
+                    stix:arg1 ?object1;
+                    stix:arg2 ?object2.
+    ________        rdf:type stix:Relation;
+                    stix:arg1 ?object1;
+                    stix:arg2 ?object2.
+    ?object1        rdf:type  ________
+    ?object2        rdf:type  ________
+  }
