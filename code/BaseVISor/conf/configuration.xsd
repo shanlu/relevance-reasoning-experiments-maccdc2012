@@ -1,0 +1,467 @@
+<x:schema xmlns:x='http://www.w3.org/2001/XMLSchema'>
+
+ <x:element name='configuration'>
+  <x:complexType>
+   <x:choice minOccurs='0' maxOccurs='unbounded'>
+    <x:element ref='global'/>
+    <x:element ref='debug'/>
+    <x:element ref='optimizationLevel'/>
+    <x:element ref='constructLiteralBlanks'/>
+    <x:element ref='metricsLevel'/>
+    <x:element ref='reteValidationLevel'/>
+    <x:element ref='eagerIndexing'/>
+    <x:element ref='stackPendingFacts'/>
+    <x:element ref='resolveLocalResources'/>
+    <x:element ref='defaultDynamicNegation'/>
+    <x:element ref='ruleLanguage'/>
+    <x:element ref='language'/>
+    <x:element ref='lang'/>
+    <x:element ref='transformation'/>
+    <x:element ref='defAxiomSet'/>
+    <x:element ref='axiomSet'/>
+    <x:element ref='include' />
+    <x:element ref='file'/>
+    <x:element ref='ruleLanguages'/>
+    <x:element ref='languages'/>
+    <x:element ref='langs'/>
+    <x:element ref='transformations'/>
+    <x:element ref='defAxiomSets'/>
+    <x:element ref='axiomSets'/>
+    <x:element ref='files'/>
+    <x:element ref='consistencyChecker'/>
+    <x:element ref='checkConsistency'/>
+    <x:element ref='cleanupParserTemp' />
+    <x:element ref='stopOnFirstInvalidDataProperty' />
+    <x:element ref='dataPropertyRangeCheck' />
+    <x:element ref='datatypeSemantics' />
+    <x:element ref='includeAnnotationAxiomaticTriples' />
+    <x:element ref='includeDatatypeAxiomaticTriples' />
+    <x:element ref='includeOtherAxiomaticTriples' />
+    <x:element ref='strict' />
+   </x:choice>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='global'>
+  <x:complexType mixed='true'>
+   <x:attribute name='variable' type='x:string' use='required'/>
+   <x:attribute name='datatype' type='x:string' use='optional'/>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='debug'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='no'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='constructLiteralBlanks'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='no'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='eagerIndexing'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='no'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='stackPendingFacts'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='no'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='resolveLocalResources'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='yes'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='defaultDynamicNegation'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='yes'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='cleanupParserTemp'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='yes'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='stopOnFirstInvalidDataProperty'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='no'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='dataPropertyRangeCheck'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='false'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='datatypeSemantics'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='false'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+<x:element name='includeAnnotationAxiomaticTriples'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='false'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+<x:element name='includeDatatypeAxiomaticTriples'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='false'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+<x:element name='includeOtherAxiomaticTriples'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='false'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='strict'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='false'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='yes'/>
+      <x:enumeration value='no'/>
+      <x:enumeration value='true'/>
+      <x:enumeration value='false'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='optimizationLevel'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='none'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='none'/>
+      <x:enumeration value='low'/>
+      <x:enumeration value='medium'/>
+      <x:enumeration value='high'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='metricsLevel'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='low'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='none'/>
+      <x:enumeration value='low'/>
+      <x:enumeration value='medium'/>
+      <x:enumeration value='high'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='reteValidationLevel'>
+  <x:complexType mixed='true'>
+   <x:attribute name='value' default='low'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='none'/>
+      <x:enumeration value='low'/>
+      <x:enumeration value='medium'/>
+      <x:enumeration value='high'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='lang'>
+  <x:complexType mixed='true'>
+   <x:attribute name='name' type='x:string' use='required'/>
+   <x:attribute name='jar' type='x:string' use='optional'/>
+   <x:attribute name='path' type='x:string' use='optional'/>
+   <x:attribute name='url' type='x:string' use='optional'/>
+   <x:attribute name='lang' type='x:string' use='optional'/>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='language'>
+  <x:complexType mixed='true'>
+   <x:attribute name='name' type='x:string' use='required'/>
+   <x:attribute name='jar' type='x:string' use='optional'/>
+   <x:attribute name='path' type='x:string' use='optional'/>
+   <x:attribute name='url' type='x:string' use='optional'/>
+   <x:attribute name='lang' type='x:string' use='optional'/>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='ruleLanguage'>
+  <x:complexType mixed='true'>
+   <x:attribute name='name' type='x:string' use='required'/>
+   <x:attribute name='jar' type='x:string' use='optional'/>
+   <x:attribute name='path' type='x:string' use='optional'/>
+   <x:attribute name='url' type='x:string' use='optional'/>
+   <x:attribute name='lang' type='x:string' use='optional'/>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='transformation'>
+  <x:complexType mixed='true'>
+   <x:attribute name='name' type='x:string' use='required'/>
+   <x:attribute name='jar' type='x:string' use='optional'/>
+   <x:attribute name='path' type='x:string' use='optional'/>
+   <x:attribute name='url' type='x:string' use='optional'/>
+   <x:attribute name='lang' type='x:string' use='optional'/>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='file'>
+  <x:complexType mixed='true'>
+   <x:attribute name='name' type='x:string' use='required'/>
+   <x:attribute name='jar' type='x:string' use='optional'/>
+   <x:attribute name='path' type='x:string' use='optional'/>
+   <x:attribute name='url' type='x:string' use='optional'/>
+   <x:attribute name='lang' type='x:string' use='optional'/>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='axiomSet'>
+  <x:complexType mixed='true'>
+   <x:attribute name='name' type='x:string' use='required'/>
+   <x:attribute name='jar' type='x:string' use='optional'/>
+   <x:attribute name='path' type='x:string' use='optional'/>
+   <x:attribute name='url' type='x:string' use='optional'/>
+   <x:attribute name='lang' type='x:string' use='optional'/>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='include'>
+  <x:complexType mixed='true'>
+   <x:attribute name='name' type='x:string' use='required'/>
+   <x:attribute name='jar' type='x:string' use='optional'/>
+   <x:attribute name='path' type='x:string' use='optional'/>
+   <x:attribute name='url' type='x:string' use='optional'/>
+   <x:attribute name='lang' type='x:string' use='optional'/>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='defAxiomSet'>
+  <x:complexType mixed='true'>
+   <x:attribute name='name' type='x:string' use='required'/>
+   <x:attribute name='jar' type='x:string' use='optional'/>
+   <x:attribute name='path' type='x:string' use='optional'/>
+   <x:attribute name='url' type='x:string' use='optional'/>
+   <x:attribute name='lang' type='x:string' use='optional'/>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='ruleLanguages'>
+  <x:complexType>
+   <x:sequence minOccurs='0' maxOccurs='unbounded'>
+    <x:element ref='ruleLanguage'/>
+   </x:sequence>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='languages'>
+  <x:complexType>
+   <x:sequence minOccurs='0' maxOccurs='unbounded'>
+    <x:element ref='language'/>
+   </x:sequence>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='langs'>
+  <x:complexType>
+   <x:sequence minOccurs='0' maxOccurs='unbounded'>
+    <x:element ref='lang'/>
+   </x:sequence>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='transformations'>
+  <x:complexType>
+   <x:sequence minOccurs='0' maxOccurs='unbounded'>
+    <x:element ref='transformation'/>
+   </x:sequence>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='defAxiomSets'>
+  <x:complexType>
+   <x:sequence minOccurs='0' maxOccurs='unbounded'>
+    <x:element ref='defAxiomSet'/>
+   </x:sequence>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='axiomSets'>
+  <x:complexType>
+   <x:sequence minOccurs='0' maxOccurs='unbounded'>
+    <x:element ref='axiomSet'/>
+   </x:sequence>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='files'>
+  <x:complexType>
+   <x:sequence minOccurs='0' maxOccurs='unbounded'>
+    <x:element ref='file'/>
+   </x:sequence>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='consistencyChecker'>
+  <x:complexType>
+   <x:attribute name='value' type='x:string' use='required'/>
+  </x:complexType>
+ </x:element>
+
+ <x:element name='checkConsistency'>
+  <x:complexType>
+   <x:attribute name='value' default='none'>
+    <x:simpleType>
+     <x:restriction base='x:string'>
+      <x:enumeration value='load'/>
+      <x:enumeration value='onLoad'/>
+      <x:enumeration value='completion'/>
+      <x:enumeration value='onCompletion'/>
+      <x:enumeration value='continually'/>
+      <x:enumeration value='all'/>
+      <x:enumeration value='none'/>
+     </x:restriction>
+    </x:simpleType>
+   </x:attribute>
+  </x:complexType>
+ </x:element>
+
+</x:schema>

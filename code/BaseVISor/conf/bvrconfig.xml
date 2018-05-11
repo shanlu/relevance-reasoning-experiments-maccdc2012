@@ -1,0 +1,25 @@
+<configuration>
+	<!-- Below are example uses of the lang and include elements of the configuration 
+		file. <lang name="MyML">convertMyMLToBvr.xsl</lang> <include name="MyRulez">rulesOfTheHouse.bvr</include> -->
+
+	<!-- Possible values for configuration settings are: debug: yes, no, true, 
+		false (default = false) optimizationLevel: none, low, medium, high (default 
+		= none) constructLiteralBlanks: yes, no, true, false (default = false) metricsLevel: 
+		none, low, medium, high (default = low) eagerIndexing: yes, no, true, false 
+		(default = false) -->
+
+	<resolveLocalResources value="yes" />
+	<constructLiteralBlanks value="yes" />
+<!-- 
+	<debug value="false" />
+	<optimizationLevel value="none" />
+	<metricsLevel value="none" />
+	<eagerIndexing value="false" />
+	<stopOnFirstInvalidDataProperty value="yes" />
+	<cleanupParserTemp value="yes" />
+	<dataPropertyRangeCheck value="false" />
+	<datatypeSemantics value="yes" />
+ -->
+
+
+</configuration>

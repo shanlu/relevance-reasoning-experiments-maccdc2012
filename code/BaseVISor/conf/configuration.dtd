@@ -1,0 +1,98 @@
+<!--
+
+  BasevVISor Configuration File Structure
+
+-->
+
+<!ENTITY % source "name CDATA #REQUIRED
+                   jar  CDATA #IMPLIED
+                   path CDATA #IMPLIED
+                   url  CDATA #IMPLIED
+                   lang CDATA #IMPLIED">
+<!ENTITY % boolean "(yes|no|true|false)">
+<!ENTITY % level "(none|low|medium|high)">
+
+<!ELEMENT configuration
+  (debug|optimizationLevel|constructLiteralBlanks|metricsLevel|
+  reteValidationLevel|eagerIndexing|stackPendingFacts|resolveLocalResources|
+  defaultDynamicNegation|ruleLanguage|language|lang|transformation|
+  defAxiomSet|axiomSet|include|file|strict|stopOnFirstInvalidDataProperty|
+  dataPropertyRangeCheck|datatypeSemantics|cleanupParserTemp|
+  includeAnnotationAxiomaticTriples|includeDatatypeAxiomaticTriples|
+  includeOtherAxiomaticTriples)*
+>
+
+<!ELEMENT debug (#PCDATA)>
+<!ATTLIST debug value %boolean; "no">
+
+<!ELEMENT constructLiteralBlanks (#PCDATA)>
+<!ATTLIST constructLiteralBlanks value %boolean; "no">
+
+<!ELEMENT strict (#PCDATA)>
+<!ATTLIST strict value %boolean; "no">
+
+<!ELEMENT eagerIndexing (#PCDATA)>
+<!ATTLIST eagerIndexing value %boolean; "no">
+
+<!ELEMENT stackPendingFacts (#PCDATA)>
+<!ATTLIST stackPendingFacts value %boolean; "no">
+
+<!ELEMENT resolveLocalResources (#PCDATA)>
+<!ATTLIST resolveLocalResources value %boolean; "yes">
+
+<!ELEMENT defaultDynamicNegation (#PCDATA)>
+<!ATTLIST defaultDynamicNegation value %boolean; "yes">
+
+<!ELEMENT dataPropertyRangeCheck (#PCDATA)>
+<!ATTLIST dataPropertyRangeCheck value %boolean; "no">
+
+<!ELEMENT datatypeSemantics (#PCDATA)>
+<!ATTLIST datatypeSemantics value %boolean; "no">
+
+<!ELEMENT cleanupParserTemp (#PCDATA)>
+<!ATTLIST cleanupParserTemp value %boolean; "yes">
+
+<!ELEMENT stopOnFirstInvalidDataProperty (#PCDATA)>
+<!ATTLIST stopOnFirstInvalidDataProperty value %boolean; "no">
+
+<!ELEMENT includeAnnotationAxiomaticTriples (#PCDATA)>
+<!ATTLIST includeAnnotationAxiomaticTriples value %boolean; "yes">
+
+<!ELEMENT includeDatatypeAxiomaticTriples (#PCDATA)>
+<!ATTLIST includeDatatypeAxiomaticTriples value %boolean; "yes">
+
+<!ELEMENT includeOtherAxiomaticTriples (#PCDATA)>
+<!ATTLIST includeOtherAxiomaticTriples value %boolean; "yes">
+
+<!ELEMENT optimizationLevel (#PCDATA)>
+<!ATTLIST optimizationLevel value %level; "none">
+
+<!ELEMENT metricsLevel (#PCDATA)>
+<!ATTLIST metricsLevel value %level; "low">
+
+<!ELEMENT reteValidationLevel (#PCDATA)>
+<!ATTLIST reteValidationLevel value %level; "low">
+
+<!ELEMENT lang (#PCDATA)>
+<!ATTLIST lang %source;>
+
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language %source;>
+
+<!ELEMENT ruleLanguage (#PCDATA)>
+<!ATTLIST ruleLanguage %source;>
+
+<!ELEMENT transformation (#PCDATA)>
+<!ATTLIST transformation %source;>
+
+<!ELEMENT file (#PCDATA)>
+<!ATTLIST file %source;>
+
+<!ELEMENT axiomSet (#PCDATA)>
+<!ATTLIST axiomSet %source;>
+
+<!ELEMENT include (#PCDATA)>
+<!ATTLIST include %source;>
+
+<!ELEMENT defAxiomSet (#PCDATA)>
+<!ATTLIST defAxiomSet %source;>
