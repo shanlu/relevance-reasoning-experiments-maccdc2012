@@ -26,7 +26,6 @@ import org.apache.jena.util.iterator.ExtendedIterator;
 public class Parser7 {
 
 	static final String inputFileName1  = "/home/shanlu/Documents/ont/MACCDC/alert.fast.maccdc2012_00001.pcap";
-//	static final String inputFileName1  = "/home/shanlu/Documents/ont/MACCDC/test";
 	
 	static final String inputFileName  = "/home/shanlu/Documents/ont/STIX.owl";
 	
@@ -96,9 +95,7 @@ public class Parser7 {
 	    OntClass Indicator = m2.getOntClass(capecURI + "#" + "Indicator");
 	    
 	    OntProperty event = m.getOntProperty(baseURI + "event");
-//	    System.out.println(event);
 	    OntProperty observable = m.getOntProperty(baseURI + "observable");
-//	    System.out.println(observable);
 	   
 	    
 	  //reading file line by line in Java using BufferedReader       
@@ -136,7 +133,6 @@ public class Parser7 {
 //            while(eventNumber < 100){
             	
             	
-//            	System.out.println(line);
             	if (eventNumber < scannedEventNumber) {
             		continue;
             	}
@@ -147,7 +143,6 @@ public class Parser7 {
             	for (String retval: line.split("\\[")){
                 	temp.add(retval);
                 	num++;
-//                    System.out.println(retval);
                  }
             	
             	if(num==6){
