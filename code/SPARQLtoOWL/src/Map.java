@@ -36,10 +36,7 @@ public class Map {
 	static final String baseURI = "http://www1.coe.neu.edu/~shanlu/research/ont/STO-L.owl";
 
 	static final File f = new File("C:/Users/shanl/Documents/ex001.rq");
-	
-	private static final String PIZZA_IRI = "http://owl.cs.manchester.ac.uk/co-ode-files/ontologies/pizza.owl";
-	
-	private static final String KOALA = "";
+
 	
 	private static List<String> readRQFile(File fin) throws IOException {
 		// Construct BufferedReader from FileReader
